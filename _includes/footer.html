@@ -1,0 +1,35 @@
+<footer class="site-footer h-card">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {% if site.author %}
+               {{ site.author | escape }}
+            {% else %}
+              {{ site.title | escape }}
+            {% endif %}
+            </li>
+            <!-- JAIME REMOVED 
+            {% if site.contact.email && false %}
+            <li><a class="u-email" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+            {% endif %}
+            -->
+        </ul>
+      </div>
+
+      <!-- JAIME REMOVED -->
+      {% if false %}    
+      <div class="footer-col footer-col-2">               
+        // {% include social.html %}
+      </div>
+      {% endif %}
+      
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
